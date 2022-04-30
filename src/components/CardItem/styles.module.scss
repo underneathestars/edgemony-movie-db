@@ -1,0 +1,76 @@
+.CardItem {
+  display: flex;
+  position: relative;
+  padding: 10px 30px;
+  border: 2px solid;
+  width: 310px;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(9, 5, 14);
+  color: aliceblue;
+  border: none;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.392);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  img {
+    display: flex;
+    align-self: center;
+    width: 200px;
+    height: 300px;
+  }
+
+  img:hover {
+    width: 210px;
+    height: 310px;
+    transition: 0.6s;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(193, 68, 97);
+  }
+
+  &__btn:hover {
+    font-size: 2.2rem;
+  }  
+
+  h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    padding: 2px;
+  }
+
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: aliceblue;
+  }
+
+
+  &__year {
+    font-size: 1.2rem;
+  }
+
+  p {
+    padding: 10px;
+    font-weight: 200;
+    font-size: 1.1rem;
+  }
+
+  ul li {
+    list-style: none;
+  }
+}

@@ -1,0 +1,13 @@
+input,
+label {
+  padding: 3px 10px;
+}
+
+.CreateCardForm {
+}
+
+.CreateCardForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
