@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { POST, PUT } from "../../utils/http";
-import "./style.css";
+import "./style.scss";
 
 function CreateCardForm({ setModalVisibility, callType }) {
   const [title, setTitle] = useState("");
@@ -14,6 +14,8 @@ function CreateCardForm({ setModalVisibility, callType }) {
   const movieId = location.pathname.split("/").reverse()[0];
 
   const unStringifyGenres = (genres) => genres.split(",");
+
+  
 
   const addNewMovie = (e) => {
     e.preventDefault();
@@ -39,10 +41,12 @@ function CreateCardForm({ setModalVisibility, callType }) {
     }
   };
 
+ 
+
   return (
     <div className="CreateCardForm">
       <form onSubmit={addNewMovie} className="CreateCardForm__form">
-        <label htmlFor="title">Title:</label>
+        <label htmlFor="title">TITLE:</label>
         <input
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -52,7 +56,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           required
         />
 
-        <label htmlFor="year">Year:</label>
+        <label htmlFor="year">YEAR:</label>
         <input
           value={year}
           onChange={(e) => setYear(e.target.value)}
@@ -62,7 +66,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           required
         />
 
-        <label htmlFor="poster">Poster:</label>
+        <label htmlFor="poster">POSTER:</label>
         <input
           value={poster}
           onChange={(e) => setPoster(e.target.value)}
@@ -72,7 +76,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           required
         />
 
-        <label htmlFor="genres">Genres:</label>
+        <label htmlFor="genres">GENRES:</label>
         <input
           value={genres}
           onChange={(e) => setGenres(e.target.value)}
@@ -82,7 +86,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           required
         />
 
-        <label htmlFor="description">Description:</label>
+        <label htmlFor="description">DESCRIPTION:</label>
         <input
           value={description}
           onChange={(e) => setDescription(e.target.value)}
@@ -92,7 +96,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           required
         />
 
-        <input type="submit" value="Send it!" />
+        <input className="input_btn" type="submit" value="SEND IT" />
       </form>
     </div>
   );

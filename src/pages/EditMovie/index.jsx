@@ -10,6 +10,7 @@ function EditMovie() {
   const location = useLocation();
   const [movieData, setMovieData] = useState({});
   const movieId = location.pathname.split("/").reverse()[0];
+  
 
   useEffect(() => {
     GET(movieId).then((data) => setMovieData(data));
@@ -17,10 +18,15 @@ function EditMovie() {
 
   return (
     <div className={styles.EditMovie}>
-      <CardItem cardData={movieData} />
-      <CreateCardForm setModalVisibility={false} callType="PUT" />
+      <div className={styles.EditMovie__upperBar}></div>
+      <div className={styles.EditMovie__wrapper}>
+        <CardItem cardData={movieData} />
+        <CreateCardForm setModalVisibility={false} callType="PUT" />
+      </div>
     </div>
   );
+  
+  
 }
 
 export default EditMovie;

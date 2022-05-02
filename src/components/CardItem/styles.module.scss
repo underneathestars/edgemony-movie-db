@@ -1,15 +1,15 @@
 .CardItem {
+  border: 1px solid rgb(193, 68, 97);
+  border-radius: 5px;
   display: flex;
   position: relative;
   padding: 10px 30px;
-  border: 2px solid;
   width: 310px;
   text-align: center;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: rgb(9, 5, 14);
   color: aliceblue;
-  border: none;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.392);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -18,6 +18,8 @@
     align-self: center;
     width: 200px;
     height: 300px;
+    margin-bottom: 10px;
+    border:1px solid rgb(193, 68, 97);
   }
 
   img:hover {
@@ -32,44 +34,69 @@
     right: 5px;
     background-color: transparent;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    color: rgb(193, 68, 97);
+    
+    color: aliceblue;
   }
 
   &__btn:hover {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    color: rgb(193, 68, 97);
   }  
 
   h2 {
     font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 1.3rem;
-    margin: 0 auto;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    margin: 15px auto 0;
     padding: 2px;
   }
 
   a {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    display: inline;
+    font-size: 1rem;
     text-decoration: none;
     color: aliceblue;
   }
 
   a:hover {
     text-decoration: underline;
-    color: aliceblue;
+    color: rgb(193, 68, 97);
+    font-size: 1.3rem;
   }
-
 
   &__year {
+    margin: 0 auto;
     font-size: 1.2rem;
+    padding: 0;
+
   }
 
-  p {
-    padding: 10px;
+  &__desc {
+    padding: 5px;
     font-weight: 200;
     font-size: 1.1rem;
+    max-height: 200px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    
   }
-
+  ::-webkit-scrollbar { 
+    width: 10px;
+    }
+    
+  .genres {
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid rgb(193, 68, 97);
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
   ul li {
     list-style: none;
   }

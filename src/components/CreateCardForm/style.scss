@@ -1,0 +1,56 @@
+
+.CreateCardForm {
+  display: flex;
+  width: 600px;
+  background-color: rgb(16, 15, 27);
+  color: aliceblue;
+  justify-content: center;
+}
+
+.CreateCardForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+
+label {
+  letter-spacing: 2px;
+  width: 400px;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input {
+  padding: 3px 10px;
+  background-color: transparent;
+  width: 400px;
+  height: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  color: aliceblue;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(193, 68, 97);
+  border-top: none;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input_btn {
+  border: 2px solid rgb(193, 68, 97);
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  margin: 5px auto;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.input_btn:hover {
+  background-color: aliceblue;
+  color: rgb(193, 68, 97);
+  font-weight: bold;
+}

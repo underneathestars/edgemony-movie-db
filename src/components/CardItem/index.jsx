@@ -12,14 +12,15 @@ function CardItem({ cardData, onForceRender }) {
   return (
     <div className={styles.CardItem}>
       <Link to={`/edit-movie/${cardData.id}`}>
-        <h2>{cardData.title}</h2>
+      <FontAwesomeIcon icon={solid('pen-to-square')} />
       </Link>
+      <h2>{cardData.title}</h2>
       <button onClick={onCardDelete} className={styles.CardItem__btn}>
       <FontAwesomeIcon icon={solid('xmark')} />
       </button>
       <p className={styles.CardItem__year}>{cardData.year}</p>
       <img src={cardData.poster} alt={cardData.title} />
-      <p>{cardData.description}</p>
+      <p className={styles.CardItem__desc}>{cardData.description}</p>
       <div className={styles.genres}>
         <ul>
           {cardData.genres &&
