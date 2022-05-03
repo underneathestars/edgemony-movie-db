@@ -12,7 +12,7 @@ function CardItem({ cardData, onForceRender }) {
   return (
     <div className={styles.CardItem}>
       <Link to={`/edit-movie/${cardData.id}`}>
-      <FontAwesomeIcon icon={solid('pen-to-square')} />
+        <FontAwesomeIcon icon={solid('pen-to-square')} />
       </Link>
       <h2>{cardData.title}</h2>
       <button onClick={onCardDelete} className={styles.CardItem__btn}>
@@ -24,7 +24,7 @@ function CardItem({ cardData, onForceRender }) {
       <div className={styles.genres}>
         <ul>
           {cardData.genres &&
-            cardData.genres.map((genre, i) => <li key={i}>{genre.toUpperCase()}</li>)}
+            cardData.genres.map((genre, i) => <li key={i}>{genre}</li>)}
         </ul>
       </div>
     </div>
