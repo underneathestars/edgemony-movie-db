@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/underneathestars.github.io/edgemony-movie-db/static/css/main.9b55cb61.css",
+    "main.js": "/underneathestars.github.io/edgemony-movie-db/static/js/main.dc12c69d.js",
+    "index.html": "/underneathestars.github.io/edgemony-movie-db/index.html",
+    "main.9b55cb61.css.map": "/underneathestars.github.io/edgemony-movie-db/static/css/main.9b55cb61.css.map",
+    "main.dc12c69d.js.map": "/underneathestars.github.io/edgemony-movie-db/static/js/main.dc12c69d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b55cb61.css",
+    "static/js/main.dc12c69d.js"
+  ]
+}
