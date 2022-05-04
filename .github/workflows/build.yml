@@ -25,7 +25,8 @@ jobs:
       ## codice custom
       - run: npm ci
       # - run: npm test
-      - run: npm run build
+      - run: CI=false npm run build
+      
 
       ## Presa dal marketplace
       - name: Deploy
