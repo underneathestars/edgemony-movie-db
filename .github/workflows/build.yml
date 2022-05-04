@@ -25,7 +25,7 @@ jobs:
       ## codice custom
       - run: npm ci
       # - run: npm test
-      - run: CI=false npm run build
+      - run: ci=false npm run build
       
 
       ## Presa dal marketplace
