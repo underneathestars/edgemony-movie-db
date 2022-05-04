@@ -14,7 +14,8 @@ function EditMovie() {
 
   useEffect(() => {
     GET(movieId).then((data) => setMovieData(data));
-  }, []);
+    
+  }, [movieId]);
 
   return (
     <div className={styles.EditMovie}>
