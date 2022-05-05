@@ -17,14 +17,14 @@ function Redirect() {
 };
 
 function AddMovie() {
-  const [isModalVisibile, setModalVisibility] = useState(false);
+  const [isModalVisible, setModalVisibility] = useState(false);
  
 
   useEffect(() => {
     setTimeout(() => {
       setModalVisibility(false);
     }, 1500);
-  }, [isModalVisibile]);
+  }, [isModalVisible]);
 
   return (
     <div className={styles.AddMovie}>
@@ -36,7 +36,7 @@ function AddMovie() {
       </div>
       <Modal
         text="New Movie Added!"
-        isVisibile={isModalVisibile}
+        isVisibile={isModalVisible}
       />
       <Redirect/>
     </div>
