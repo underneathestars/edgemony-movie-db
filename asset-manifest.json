@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.328bde94.css",
-    "main.js": "/static/js/main.bc576c5b.js",
-    "index.html": "/index.html",
-    "main.328bde94.css.map": "/static/css/main.328bde94.css.map",
-    "main.bc576c5b.js.map": "/static/js/main.bc576c5b.js.map"
+    "main.css": "/edgemony-movie-db/static/css/main.328bde94.css",
+    "main.js": "/edgemony-movie-db/static/js/main.9815587b.js",
+    "index.html": "/edgemony-movie-db/index.html",
+    "main.328bde94.css.map": "/edgemony-movie-db/static/css/main.328bde94.css.map",
+    "main.9815587b.js.map": "/edgemony-movie-db/static/js/main.9815587b.js.map"
   },
   "entrypoints": [
     "static/css/main.328bde94.css",
-    "static/js/main.bc576c5b.js"
+    "static/js/main.9815587b.js"
   ]
 }
