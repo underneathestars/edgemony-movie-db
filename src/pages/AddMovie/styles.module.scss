@@ -2,6 +2,34 @@ html {
     background-color: rgb(16, 15, 27);
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+.btn__btn {
+    border: 2px solid rgb(193, 68, 97);
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: aliceblue;
+}
+  
+.btn__btn:hover {
+    background-color: aliceblue;
+    color: rgb(193, 68, 97);
+    font-weight: bold;
+}
+
+}
+
 .AddMovie {
     display: flex;
     justify-content: center;
@@ -35,6 +63,7 @@ html {
     letter-spacing: 4px;
     border-bottom: 1px solid rgb(193, 68, 97);
     }
-
-
 }
+
+
+

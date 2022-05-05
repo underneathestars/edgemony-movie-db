@@ -49,6 +49,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           type="text"
           id="title"
           name="title"
+          placeholder="Movie title..."
           required
         />
 
@@ -59,6 +60,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           type="text"
           id="year"
           name="year"
+          placeholder="Year..."
           required
         />
 
@@ -69,6 +71,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           type="text"
           id="poster"
           name="poster"
+          placeholder="Paste your poster's link here..."
           required
         />
 
@@ -79,6 +82,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           type="text"
           id="genres"
           name="genres"
+          placeholder="Add genres separated by commas..."
           required
         />
 
@@ -89,6 +93,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
           type="text"
           id="description"
           name="description"
+          placeholder="Movie description..."
           required
         />
 

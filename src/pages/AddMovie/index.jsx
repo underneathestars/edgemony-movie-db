@@ -1,7 +1,20 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import CreateCardForm from "./../../components/CreateCardForm";
 import Modal from "./../../components/Modal";
 import styles from "./styles.module.scss";
+
+function Redirect() {
+  let navigate = useNavigate();
+  function handleClick() {
+    navigate("/")
+  }
+  return (
+   <div className={styles.btn}>
+    <button className={styles.btn__btn} onClick={handleClick}>GO BACK</button>
+  </div>
+  );
+};
 
 function AddMovie() {
   const [isModalVisibile, setModalVisibility] = useState(false);
@@ -25,6 +38,7 @@ function AddMovie() {
         text="New Movie Added!"
         isVisibile={isModalVisibile}
       />
+      <Redirect/>
     </div>
   );
 }
