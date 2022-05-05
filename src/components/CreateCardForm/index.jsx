@@ -15,13 +15,11 @@ function CreateCardForm({ setModalVisibility, callType }) {
 
   const unStringifyGenres = (genres) => genres.split(",");
 
-  
-
-  const addNewMovie = (e) => {
+  const addNewMovie = async (e) => {
     e.preventDefault();
 
     if (callType === "POST") {
-      POST({
+        await POST({
         title,
         year,
         poster,
@@ -31,7 +29,7 @@ function CreateCardForm({ setModalVisibility, callType }) {
 
       setModalVisibility(true);
     } else {
-      PUT(movieId, {
+      await PUT(movieId, {
         title,
         year,
         poster,
@@ -40,8 +38,6 @@ function CreateCardForm({ setModalVisibility, callType }) {
       });
     }
   };
-
- 
 
   return (
     <div className="CreateCardForm">
